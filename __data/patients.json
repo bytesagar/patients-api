@@ -1,0 +1,35 @@
+[
+    {
+        "Name": "Roshan Acharya",
+        "Age": 50,
+        "Email": "roshan@gmail.com",
+        "PhoneNumber": "98000000000",
+        "Height": "5.5ft",
+        "Weight": "60kg",
+        "BloodGroup": "B+",
+        "Address": "Kathmandu, nepal",
+        "Country": "Nepal"
+    },
+    {
+        "Name": "Sagar karki",
+        "Age": 20,
+        "Email": "sagar@gmail.com",
+        "PhoneNumber": "980000000",
+        "Height": "5.5ft",
+        "Weight": "60kg",
+        "BloodGroup": "B+",
+        "Address": "Dhangadhi, kailali",
+        "Country": "Nepal"
+    },
+    {
+        "Name": "Gaurav Shah",
+        "Age": 100,
+        "Email": "gaurav@gmail.com",
+        "PhoneNumber": "98090000000",
+        "Height": "5.5ft",
+        "Weight": "60kg",
+        "BloodGroup": "B+",
+        "Address": "Dhangadhi, kailali",
+        "Country": "Nepal"
+    }
+]
