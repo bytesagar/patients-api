@@ -1,21 +1,21 @@
 const router = require("express").Router()
-const { protect } = require("../middleware/protect")
+const { protect, authorize } = require("../middleware/protect")
 
 const { getAllPateients, getPatient, createPatient, updatePatient, deletePatient, photoUpload } = require("../controllers/patients")
 
 router
     .route("/")
     .get(getAllPateients)
-    .post(protect, createPatient)
+    .post(protect, authorize('staff', 'doctor'), createPatient)
 
 router
     .route("/:id/photo")
-    .put(photoUpload)
+    .put(protect, authorize('staff', 'doctor'), photoUpload)
 
 router
     .route("/:id")
     .get(getPatient)
-    .put(protect, updatePatient)
-    .delete(protect, deletePatient)
+    .put(protect, authorize('staff', 'doctor'), updatePatient)
+    .delete(protect, authorize('staff', 'doctor'), deletePatient)
 
 module.exports = router
